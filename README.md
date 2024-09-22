@@ -33,8 +33,10 @@ Para o backend, clone o repositório [symptom-api](https://github.com/mcurvello/
 
 ## Como Executar
 
-1. Abra o arquivo `index.html` em um navegador web.
-2. Certifique-se de que o backend está em execução.
+1. Faça um **fork** deste repositório: [CareConnect](https://github.com/mcurvello/careconnect.git).
+2. Clone o repositório forkado para sua máquina.
+3. Abra o arquivo `index.html` em seu navegador.
+4. Certifique-se de que o backend está em execução.
 
 ## Contribuição
 
