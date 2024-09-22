@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareConnect</title>
+
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Link para a fonte Poppins do Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <!-- Título principal da página -->
+    <h1 class="title">CareConnect</h1>
+
+    <!-- Seção sobre a plataforma -->
+    <section id="sobre">
+        <section id="description">
+            <h2>Saúde na Palma da Mão</h2>
+            <p>
+                Com o <strong>Saúde na Palma da Mão</strong>, você tem o poder de
+                cuidar da sua saúde de forma prática e eficiente. Registre seus
+                sintomas facilmente e tenha um histórico completo na palma das suas
+                mãos, pronto para ser consultado sempre que necessário.
+            </p>
+            <p>
+                Ideal para quem deseja se preparar para consultas médicas, nosso
+                sistema é a ferramenta perfeita para acompanhar sua saúde. Não deixe a
+                sua saúde para depois, tenha sempre as informações que você precisa à
+                mão!
+            </p>
+            <p>
+                Experimente e transforme a forma como você se relaciona com sua saúde.
+            </p>
+        </section>
+    </section>
+
+    <!-- Seção para adicionar um novo sintoma -->
+    <section>
+        <h2>Adicionar Sintoma</h2>
+        <form id="addSymptomForm" class="form-container">
+            <div class="form-section">
+
+                <div class="form-group">
+                    <label for="symptomName">Nome do Sintoma</label>
+                    <input
+                      type="text"
+                      id="symptomName"
+                      placeholder="Ex: Dor de Cabeça"
+                      required
+                    />
+                </div>
+                <div class="selects">
+                    <div class="form-group">
+                        <label for="severity">Severidade</label>
+                        <select id="severity" required>
+                            <option value="">Selecione a Severidade</option>
+                            <option value="leve">Leve</option>
+                            <option value="moderada">Moderada</option>
+                            <option value="severa">Severa</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="type">Tipo</label>
+                        <select id="type" required>
+                            <option value="">Selecione o Tipo</option>
+                            <option value="agudo">Agudo</option>
+                            <option value="crônico">Crônico</option>
+                            <option value="recorrente">Recorrente</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="selects">
+                    <div class="form-group">
+                        <label for="occurredAt">Data do Sintoma</label>
+                        <input type="date" id="occurredAt" required />
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="occurredTime">Hora do Sintoma</label>
+                        <input type="time" id="occurredTime" required />
+                    </div>
+                </div>
+                <button type="submit">Adicionar Sintoma</button>
+            </div>
+            <img src="https://images.pexels.com/photos/5699431/pexels-photo-5699431.jpeg" alt="Sistema de Monitoramento">
+        </form>
+    </section>
+
+    <!-- Seção para listar os sintomas adicionados -->
+    <section>
+        <h2>Lista de Sintomas</h2>
+        <table id="symptomTable">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Nome</th>
+                    <th>Severidade</th>
+                    <th>Tipo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="symptomList"></tbody>
+        </table>
+    </section>
+
+    <!-- Seção para mostrar os detalhes de um sintoma específico -->
+    <section id="detailSection" style="display: none;">
+        <h2>Detalhes do Sintoma</h2>
+    
+        <!-- Informações do sintoma -->
+        <p><strong>Nome do Sintoma:</strong> <span id="nameSymptom"></span></p>
+        <p><strong>Severidade:</strong> <span id="symptomSeverity"></span></p>
+        <p><strong>Tipo:</strong> <span id="symptomType"></span></p>
+        <p><strong>Data e Hora:</strong> <span id="symptomOccurredAt"></span></p>
+    
+        <!-- Formulário para adicionar novo detalhe -->
+        <form id="addDetailForm">
+            <input type="text" id="detailText" placeholder="Texto do Detalhe" required />
+            <input type="hidden" id="selectedSymptomId" /> 
+            <button type="submit">Adicionar Detalhe</button>
+        </form>
+    
+        <h3>Detalhes Adicionados:</h3>
+        <ul id="detailList"></ul>
+    </section>
+
+    <!-- Inclusão do script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

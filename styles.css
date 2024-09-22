@@ -1,0 +1,159 @@
+/* Estilização geral do corpo da página */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Estilo do título principal (h1) */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilo específico para a classe .title */
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+  color: #165696;
+  text-align: center;
+  margin-top: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+}
+
+/* Estilo para seções da página */
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para títulos de nível 2 (h2) */
+h2 {
+  color: #007BFF; /* Título em destaque */
+}
+
+/* Estilo específico para a seção de descrição */
+#description {
+  background-color: rgba(230, 247, 247, 0.644);
+}
+
+/* Estilo para parágrafos */
+p {
+  line-height: 32px;
+}
+
+/* Estilo do contêiner do formulário */
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap-reverse;
+  gap: 24px;
+}
+
+/* Estilo das imagens */
+img {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Estilo para grupos de formulário */
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo para seções do formulário */
+.form-section {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Estilo do botão dentro da seção do formulário */
+.form-section button {
+  margin: auto;
+}
+
+/* Estilo para contêineres de seleção */
+.selects {
+  display: flex;
+  gap: 15px;
+}
+
+/* Estilo para rótulos */
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilo para entradas de texto e seleções */
+input, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para botões */
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Estilo para o botão ao passar o mouse */
+button:hover {
+  background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+/* Estilo para tabelas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Estilo para tabelas, cabeçalhos e células */
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+/* Estilo para células de cabeçalho e corpo da tabela */
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Estilo para células de cabeçalho */
+th {
+  background-color: #007BFF;
+  color: white;
+}
+
+/* Estilo específico para a seção de detalhes */
+#detailSection {
+  margin-top: 20px;
+}
+
+/* Estilo para a lista de detalhes */
+#detailList {
+  margin-top: 10px;
+}
